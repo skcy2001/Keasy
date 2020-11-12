@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-from tkinter import *
+from tkinter import END,INSERT
 from tkinter import font
 from functools import partial
 
@@ -56,7 +56,7 @@ for i in range(1,11):
 line = "QWERTYUIOP"
 k2 =  [0 for x in range(14)]
 
-ktab = tk.Button(keyb,text = "Tab", width = wd+7, command = lambda : Tab() ,font = alt_font, bd = 4)
+ktab = tk.Button(keyb,text = "Tab", width = wd+7, command = print("a") ,font = alt_font, bd = 4)
 ktab.grid(row = 4 , column = 0, columnspan = 22, sticky = 'nsew',padx = (5,0),ipady = button_y+5)
 
 j = 22 
