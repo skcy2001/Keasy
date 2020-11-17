@@ -17,7 +17,7 @@ Key_colour = '#FF99FF'
 Accent_colour = '#967bb6'
 Accent_colour2 = '#CBCE91'
 Bg_Colour = '#C7D3D4'
-Row_index = (5,6,7,8,9,10)
+Row_index = (2,3,4,5,6,7)
 
 #endregion of Variables
 
