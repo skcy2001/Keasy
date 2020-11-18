@@ -3,6 +3,7 @@ from tkinter import ttk
 from tkinter import END,INSERT
 from tkinter import font
 from functools import partial
+from tensorflow import keras
 
 keyb = tk.Tk()  # Root Window
 
@@ -31,7 +32,7 @@ keyb.configure(bg = Bg_Colour)  # add background color
 inp_text = tk.Text(keyb,font = entry_font,height = 2)
 inp_text.grid(rowspan = 2 , column = 0, columnspan = 500, ipadx = 3 , ipady = 4)
 inp_text.focus_set()
-    
+
 # definition of Key Functions
 def press(inp):
     inp_text.insert(INSERT,str(inp))
@@ -151,6 +152,5 @@ Backs = tk.Button(keyb,text = "Backspace", width = button_wd+7, command =  lambd
 Backs.grid(row = Row_index[5] , column = 9, columnspan = 2, ipady = button_hg-10)
 
 # endregion of Functional Keys
-
 
 keyb.mainloop()  # using ending point
