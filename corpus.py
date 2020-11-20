@@ -39,4 +39,5 @@ for filename in glob.glob(os.path.join(folder_path, '*.csv')):
             except: continue
     
     f.close()
+print("\n",end='\r')
 fhand.close()

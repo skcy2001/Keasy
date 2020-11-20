@@ -179,6 +179,4 @@ Speak.grid(row = Row_index[6] , column = 0, columnspan = 15, ipady = button_hg-1
 
 # endregion of Functional Keys
 
-print(predict(model,"to",3))
-
 keyb.mainloop()  # using ending point
