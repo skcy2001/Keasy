@@ -17,8 +17,8 @@ def char_preprocess(text):
     text = text.lower()
     # Remove whitespaces
     text = text.replace('_','')
-    # Remove \n tags
-    text = text.replace('\n','')
+    # Split in sentences
+    text = text.replace('.','\n')
     return text
 
 fhand = open("corpus.txt","w+",encoding='utf-8-sig')
@@ -31,7 +31,7 @@ for filename in glob.glob(os.path.join(folder_path, '*.csv')):
         data = csv.reader(f,delimiter = ',')
 
         #Reads line by line, preprocesses it, and writes in a file
-        for line in islice(data,1000):
+        for line in islice(data,10000):
             print("FILE :", filename, "| Time left : %dm%6.3fs" %(math.floor(row_count/rate/60),row_count/rate % 60), end='\r')
             row_count = row_count - 1
             line = char_preprocess(line[5]) + "\n"
