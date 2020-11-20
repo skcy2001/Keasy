@@ -11,7 +11,7 @@ except:
     import corpus
     f = open(filename,'r')
     print("CORPUS loaded")
-lines = f.readlines(1000)
+lines = f.readlines(1000000)
 
 def in_dictlist(my_tuple, my_dictlist):
     for i in range(len(my_dictlist)):
