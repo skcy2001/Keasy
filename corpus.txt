@@ -1,0 +1,1000 @@
+﻿text
+any ideas why java plugin takes so long to load
+java .
+yes
+java . loads much faster
+noneus how can i get . is there a .deb somewhere
+not yet.
+noneus is this blackdown or sun
+did you install just the jre
+i use ibms ..
+jdk because i do globus development
+ah ok then ill give it a try does ibm have a standard jre with plugin
+yes
+thanks ill try that screwed up and tried to upgrade firefoxjava on my own now java takes real long time to load
+cant seem to find an ibm jre package would you happen to have a url
+httpswww.software.ibm.comdllxdklxdkp
+you have to create a login.
+much appreciated
+. is latest ibm java
+yes.
+for certain arches
+do you have jsecommon installed in ubuntu as well is ibms java
+i do not.
+ok got it
+i dont know whats up no matter what java plugin i use it takes a really long time to load a java applet
+are you using warty or hoary  and firefox . or .
+hoary kernel from warty mixed with debian sidexperimental. mozillafirefox . from sid.
+eh i dare not to go there 
+whered you get that mozillafirefox from sid 
+its in sids pool
+i can get the .deb on the web
+sure but id wait a couple days. itll probably be in hoary within days.
+but...hoary...isnt that unstable
+how did you hold back and keep warty kernel
+i use aptpinning to keep the linux well kernelrelated packages pinned to wartysecurity
+ok so far ibms java is pretty clean fast and seems stable so far d
+indeed.
+so just wait a day for sed error to be fixed and dont aptget upgrade at this time
+it is already fixed. the matter of the fixed package migrating to pool is of time.
+got it thanks
+lol crash d
+dell laptop
+lsmodgrep sndintelxmwc l
+ but i did install hsf deb early on then upgraded to hoary
+and yes dell laptop sorry
+look in procinterrupts and ensure an irq is being assigned to your sound chipset
+roger
+only thing closely resembling is i would that be it
+nope
+ok thanks how to fix
+and sndintelx is loaded correct
+yes it is loaded
+could be installing hsf from the getgo cause this
+im not familiar w hsf
+hsf linuxant modem drivers
+ah.
+id try and disable anything in bios youre not using like a printer port since youre already using the modem
+dell bios is usually pretty limited but looking into now thanks
+indeed.  you are the man.  i disabled as much as possible in bios and not soundcard is assigned an irq is it  wonder why all of a sudden this needed to be done  maybe because modem driver was properly installed
+ive seen the error quite a few times with sndintelxm being loaded or an irq not being assigned etc.
+seems to be a problem with that bios but im not certain.
+this bios has multiple issues actually 
+cant get apm working with it and ubuntu and acpi support is iffy at this point
+why is ssh only listening on tcp
+huh
+sorry netstat tupan says ssh is listening on tcp is that ipv only
+no that includes ipv
+do you have opensshserver installed if so can you real quick ssh localhost let me know if it works if you are running unstable...
+its fine.
+on the wiki.
+roger that 
+any more broken than normal no.
+cant get my usb mp player to fire up with gnomad it just hangs and latest isnt in sid yet which i need as its a new player
+what is the command to make a dep out of a source package  make dist 
+depdeb
+no its more complicated than that for some packages.
+for what application are you attempting this
+libnjb
+there is debian subdir
+which x.org devel package
+um there is no xorgdevel 
+what issues
+like if two soundcards doesnt select the right one or something i just remember having sound issues upon initial install of warty
+i gave my neighbor a bunch he knows all the kids in town and going to hand em out at school d
+but i think gave my neighbor too much going to take some back for school
+ill fire up laptop and check one sec
+yep broken sorry about that
+what packages did mplayer for warty  choke on
+libarts libfrididi libggi libungifg
+im backporting it from hoary if youre willing to try the packages ill let you know from where to grab them when it finishes.
+awesome of course 
+attempting the downgrade as mentioned per the wiki
+ping
+the downgrade seemed to work d
+excellent.
+there are a few issues with gmplayer of that mplayer query 
+have you run across any
+yes a few with gmplayer
+two actually
+spill.
+ when gmplayer starts the rotary hourglass hangs for a few seconds like its waiting for something to initialize and  nevermind and issue in my mplayer.conf  and  might set the default xoxv so that when f key for fullscreen image isnt centered in middle of screen but does take up full screen  the first is the only real issue though.  let me run gmplayer in terminal
+ok when i start gmplayer in terminal there is no hang
+i dont use gmplayer really but...
+only when i start it from menu
+i will take a look at the menu entry
+dont understand  or 
+x is a safer default because xv is broken on some chipsets
+nevermind on  and  x is safer nevermind on that one as well 
+thanks for notifying.
+xv is optimised for the drivers that support it properly
+only probs can find then is when launched from menu entry
+think its safe to use hoary .. kernel in warty
+your call though i advise you to stick with wartys if you use the binaryonly nvidia or ati driver.
+got it thanks
+did starting gmplayer from the menu work in a previous mplayer build
+know how redhat has ntsysv ncurses based app does ubuntudebian have anything similar for handling init scripts
+updaterc.d
+fscking updaterc.d fscking giving me fscking headaches
+there must be something awry with your menu entry for gmplayer. someone else attests that it executes perfectly.
+youre right sorry about that its probably on my end as i did an downgrade from hoary to wary thanks anymore testing i can do let me know i should have mentioned that beforehand but it works
+how to fix the menu entry  anything like delete .gconf or
+know if when hoary ships fbsplash will be enabled and if so will default gnometerminal background be the fbsplash image file
+to be honest i have no idea jdub probably has a much clearer idea.
+ok thanks
+links wm lynx ...
+can you dcc me etcmuttrc that ships with mutt
+hi ive ran a few apps under sudo s now things are messed up is there any way to recover
+that depends entirely on what you commands you executed.
+guarddog lokkit firestarter i think is all
+now ls l doesnt respond and gnome panels are messed up and nautilus cant start
+or is there a link to unfsck i.e. i know it was mentioned in kbsetup
+what did you do with those applications
+i use a homebrewed iptables script so im afraid i cant necessarily assist.
+i launched them under sudo s and configured them or would there be another reason why ls l homelance doesnt respond
+or gets hung
+usually if that command doesnt respond you have a serious problem like a kernel oops
+does it work after a reboot
+sure doesnt
+let me try booting another kernel brb
+it was stupid firestarter and networked filesystems
+hows array  working out
+hoary system itself seems fine but i cant use the display since the crt is kaput. 
+thanks
+i really like the new update manager btw much more intuitive and simpler than synaptic 
+aptitude is another front end to apt.
+lol i did why p
+is aptitude safer to use than say aptget distupgrade
+safer for me its preference.
+ever use openbox
+for a long time openbox  then openbox  were my preferred wms
+using metacity now
+no im at work so im technically using whatever xp uses.
+on your ubuntu box i meant
+for my main user  yes  although i use a variety of wms for different users
+know how with openssh it will not write .sshknownhosts
+
+i.e. knownhosts doesnt get written when the server sends its public key...
+why would it when the keys are exchanged that file is only modified when you as the user acknowledge affirmatively that you wish to add the host key
+my problem is i have two computers behind the same domain name so i get a man in the middle attack warning and no connect when switching between the two
+switching between the two
+ssh to one computer namedomain different port disconnect ssh samenamedomain different port the second time i  get warning and no connect
+the warning is normal
+i figured it out thanks
+hi does .gnome contain gconf variables
+muine is in universe afaik
+
+its crashing often in hoary after running mpgain on a large mp dir should i file a bug
+i was asking if muine is in universie
+absolutely
+..ubuntu is hoaryuniverse
+do i need to copy anybody or defaults is good
+defaults are fine.
+opened a bug regarding muine
+
+
+is it possible muine is having a buffer overflow due to libmuine.so.so not being able to be found  why its looking for that i have no clue.
+buffer overflow highly doubtful.
+just a wild guess how can i provide more debugging info  gdb tells nothing.
+did you set the monodebug env var to a nonzero value
+only thing i set was monologleveldebug what do you recommend setting it to like 
+export monodebug should work
+or  or something
+if i go into gconf settings and change monitored folder to something else it pops back working
+last line in debug is monoinfo dllimport loading location libglib..so.. then it segfaults.
+could be one particular mp on my end ill try to isolate a bit more
+isolate it lol
+hows it going mate
+nbad yourself
+not bad just watched a smoothwall install die on a mb nic card and might be getting some work installing a linux server later on
+and really impressed with how ubuntu is coming along minus the crap of a power management my laptop has
+what should i use as cd burning app if i want to get rid of kb
+graveman
+can graveman do isos or just rely on nautilus for that
+is there alsa cvs available in ubuntu
+cvs no.
+.. is available in hoaryuniverse via the alsasource package.
+yes my card just got bit support but i have to patch against cvs to use it i can wait i guess would be nice though 
+on my laptop with hoary if i dmesggrep i dsdt it says initrd doesnt have a dsdt patch when on bugzilla it says it does...
+any ideas on the dsdt or just comment on the closed bug
+sorry could you point me to the bug 
+httpsbugzilla.ubuntu.comshowbug.cgiid
+ok will look in a bit busy atm
+ok thanks
+none. alsadriver is the name of the source package.
+what specifically are you looking for
+driver module
+try using the alsasource and alsabase debs from experimental
+im using them just fine ....rc
+how can i get experimental
+
+its fairly complicated you cant use the debs directly
+can i make .debs from alsadriver package
+yes if you tweak.
+however the dependencies are fairly twisted.  i dont recommend it.
+ok thanks
+which contains the .ko file
+in regular hoary
+the alsadriver deb that you build from alsasource
+linuximage contains those
+k thnx
+i know its probably not a good idea but going to stick with alsadriver stable for now self compiled pv support in ..rc seem broken
+sure.  how is ca in ..rc broken
+you have to use a corresponding ..rc libasound as well
+no bit support for audigy
+ah so i need the libs as well doh
+still broken it seems
+what is
+..rc
+pv support for audigy eys
+regular pcm works fine
+and youve confirmed via cvs revisions that this is the case
+nope. just tried rc
+its not high priority really ive submitted a big to gnomes bugzilla regarding gstreamer and custom sink to enable pv but reckon should wait until at least it makes it into stable before following up on bug
+pv support in alsa for audigy that is wait until stable
+not sure how gst would really help there besides being able to specify a virtual device.
+as the custom sink is broken in gst and works in xine
+afaik the fact that pv support even works in rc is a complete fluke because it appears to be utterly broken
+and broken it is in rc heh ill help jcdutton if i can
+hi hows it going do you know how to load a custom dsdt in initrd
+in hoary...
+why did they remove the ndiswrapper page
+they didnt its having difficulties. see the topic.
+theres no one package that does.
+i messed it up somehow is there a way to reset  when i run dhclient it doesnt write the nameservers
+i was helping troubleshoot the wireless network at school and installed pump and other junk
+how to fix my etcresolv.conf so that it writes nameservers when using dhclint 
+youre not invoking dhclient manually are you
+yes
+i am invoking dhclient manually
+err why
+the instance in etcnetworkinterfaces doesnt work
+what is that
+thats the actual file.
+ok
+hi
+hi
+what to do after aptget install alsasource to install .. driver
+figured it out lol thanks to linkage
+werent you using ..cvs anyhow
+um was using emuk oss there for a bit then to ubuntu stock now ..
+i couldnt get it to compile with cvscompile
+hum. i could have sworn you were using alsa ..cvs at one point.
+think i tried at one point was using ..rc
+its a shame actually emukoss is a decent driver
+of course its decent thats where the alsa driver has its roots 
+ah
+why when i save something to the desktop it doesnt show up
+in gnome
+hi is it normal behaviour that is i save something to the desktop folder it doesnt show up on the desktop unless i refresh that folder in nautilus
+i suppose that depends on the backend which depends whether dnotify or inotify is used
+which do you use
+i use inotify because im using a pre..
+so any previous uses dnotify
+hoarys kernel does
+odd using gtks file save dialogue  of the time if i save a file to teh desktop it doesnt show up unless i refresh in nautilus
+my hunch is that dnotifygamin are to blame
+oh how to get rid of them  this is an upgrade from warty...
+you dont have any choice currently
+can i go back to fam or is that a bad idea as well
+is a shame ill just have to refresh nautilus to see whats on desktop wout killing nautilus
+bad idea to go back
+ok then dangit
+should i file a bug upgrade to breezy or just wait
+check bugzilla certainly but its a better idea to wait
+ok dangit
+ping
+pong
+remember we were talking about setting up two soundcards  there is person in creative could use some help with that if you have a minute.
+with alsa
+right now oss but maybe alsa later could you join please
+have him ping me when hes dealing with alsa thanks
+got it thanks
+no
+cant install captive with it
+sure you can just install buildessential gcc. and linuxheadersuname r
+ok thanks
+is captive part of ubuntu or do i need to add a repo or just install a .deb
+you need to compile it yourself
+thanks
+i found a repo for captive should i still install from source
+a repo may not be specifically for your ubuntu install
+ok ill go with the source
+is it ok to add a repository that is intrepid to hardy
+no absolutely not
+you can use a backport if there is one or you can try compiling the source package of intrepid
+what is it
+zoneminder ..
+do you have any recommendations
+well you think wrong backports is for installing newer apps. but anyway there doesnt seem to be a backport for zoneminder.
+if you wait a while ill see if i can compile the intrepid version then give you instructions to do it.
+leave .configure alone please.
+you can install the intrepid source package without touching .configure just have a little patience.
+ok i can help you get a proper package compiled shall i
+your good i keep gettin
+sudo nano etcaptsources.list and add this line  debsrc httpse.archive.ubuntu.comubuntu intrepid main restricted universe multiverse
+save and do sudo aptget update
+yes thats fine  well remove that line later
+its true but its a source repository and well only get this one package from it to compile
+top or bottom is the same
+thats not a source package thats just the upstream distribution. im talking about a proper ubuntu source package which will get a binary .deb compiled.
+ok ill follow your lead updating sources.list starting now
+when youre done create an empty directory with mkdir mypackage then cd mypackage
+tell me when youre done
+now aptget source zoneminder
+then youll have to modify a file slightly because it doesnt compile out of the box. do cd zoneminder.. then nano srczmmpeg.cpp
+now go to line  to do that hit ctrlw then ctrlt then type 
+uh
+well its the intrepid version
+no
+hardy version is .. intrepid version is ..
+then you didnt add the intrepid line correctly and really theres nothing you need to comment out
+im sure you right lemme double check
+debsrc httpse.archive.ubuntu.comubuntu intrepid main restricted universe multiverse
+and sudo aptget update
+ok do you remember the rest of the steps youll have to remove the stuff that was downloaded now first
+not the old directory you made a new one right
+do you see urlfcloseofcpb
+change it to   urlfcloseofcpb
+then save and exit ctrlx
+yes that doesnt matter. just change 
+yes thats right
+now do dpkgbuildpackage b uc while youre in the directory zoneminder..
+ah wait i forgot to make you get the build dependencies
+first do sudo aptget builddep zoneminder
+then dpkgbuildpackage b uc
+yes thats correct
+do you have a hardy build
+we dont want actual binary packages to be downloaded from intrepid repositories
+ok
+yes but you really shouldnt take binary packages from strangers. anyway were nearly done
+but you would have installed it from the upstream source which can be a bad idea
+that would not have worked builddep gets the dependencies to compile not the ones to run the binary .deb package
+thanks for helping i run that one command inside the zoneminder direcotry right
+yes dpkgbuildpackage b uc. then if you cd .. you should find a .deb package ready to be installed with gdebi or dpkg i in that directory.
+for your information if there hadnt been this little difficulty with line  youd just have done aptget builddep packagename  aptget build source packagename and youd have found yourself with a working .deb immediately
+we had to complicate that a little because of having to edit the sourcecode
+ya im glad bc the old version is buggy
+has it finished compiling i need to go away soon
+it is still compiling this is on a somewhat slower box
+you can just use gdebi to install it that will get the dependencies too
+uhm im sorry but i just have to go now you may have to edit debianzoneminder.substvars and change the dependencies...
+dern
+ok
+o ok
+ok
+i tied using livecd but that doenst work
+so ima reinstall it using wubi since i just uninstalled it
+nope
+i made the cd i mean but instead i just get a black screen
+i hear some music like the bongos
+after that im done
+ok with the live cd u mean the three options demo installition  installtion and more about ubuntu
+use the persons nick that your talking to when responding so your message wont get lost in the noise.. just type the first few characters of the nick and hit tab for easy completion.
+you didnt use tab.. my nick got misspelled  .. thats a smiley face
+yes
+ok good i put the cd in and i get three otoptins which are demo and full installtion install inside windows and learn more
+which  to chose
+im still on my orignal os windows ep
+youve obviously inserted the cd while still in windows.. do you want to keep windows on the computer and also have ubuntu or would you like to wipe windows off and just have ubuntu.. or still yet do you want to just test ubuntu out while in the windows environment
+im just worried if ubunto doesnt work then im screwed right
+in that case leave the cd in the drive and reboot the computer.. if the boot order goes to cd first then the live cd will boot and you can test the functionality of ubuntu on your hardware.. being a live cd it wont touch the harddrive until you actually install.. itll be much slower but functional.
+if there are issues then with the live cd come back here and talk about them.. there might be answers to the issues.. when ready double click the install icon
+ok
+a loading screen with a organge bar going back and forth like a game of ping
+thats good.. it might take a minute or two
+ok well a peachish background came up the sound of bongos played then the screen just went black
+what kind of video card do you have.
+before the backgroudn loaded it said something like timedout....
+is this a newer computer
+on reboot you had a menu that gave you the choice of windows or ubuntu.. did you install ubuntu already with wubi
+should i use wubi get to login screen then go to terminal mode and put some commands in
+uninstalled what
+so wubi was first and you uninstalled that .. except now when you boot you still get a menu
+wubi i used first installed that no icons on destop uninstalled using wubi once again
+yes i sitll get a menu
+with the black screen displaying can you click ctrlaltf and get a different black screen with a prompt
+lemme try
+when you reboot you might try to get into the bios of the machine and look at the boot order.. in fact on a dell you might be able to hit a key on boot to boot directly from the cd.. if there is that option reboot and choose that.. otherwise youll have to look in the bios to rearrange the boot order of things so the cd is first and the harddrive is second.. then you should be able to boot dir
+ok i will try
+just to be certain whats the rite way to unstinall ubuntu to make sure i did it right
+from wubi  ive no idea.. never used wubi
+so you have a black screen with a prompt
+ah good.. yep
+then it will buzz  wurr for a bit and leave you at the standard ubuntu desktop
+is this the live cd or the alternate cd
+the livecd from which i burend using the iso image
+click install ubuntu.. it wont .. itll just take you to the live desktop..
+
+thats a new one on me.. there is a wiki or something on dells site for linux.. you might investigate there and search for your specific dell to see what issues people are having.. i suspect that theres a piece of hardware thats hanging everything up.. my new motherboard is like that.. took me two days to find an answer.
+np.. sorry i cant be of more help
+well if the live cd doesnt run the chances of it working without knowing what is currently wrong now is slim.. you have to solve that issue first.
+really.. whats the answer
+so the screen is working  good .. just keep going and for space tell it to use the entire drive..
+so he stopped you from installing or are you continuing
+so youre running the live cd or back to windows or what
+cool.. will your dad approve or be pissed
+full install takes less space than windows.. and it has all the programs you need typically.. then you can add tons more.
+i take it this is your machine
+you in college yet
+youre pretty adventerous.. its a great time for you to learn linux.. ill help you a lot in the future..
+its a good place to be.. im just an old dog learning new tricks
+nick new name
+k
+yes
+ gnometerminal
+ gnometerminal type that
+you could try ggoing to the homepage
+httpwww.skype.com
+ok i will try
+try aptcache search skype to see if its in your cache
+httpubuntuguide.orgskype  this may help
+the debian package at skype site should be good too
+thats what we gdo here
+help each other out 
+oh ok.. just type ds and tab
+you see a list of persons that start with ds in the room
+yoo thanks you very much
+you are welcome
+ ok i did now i am click on skype and nothing...
+good luck with skype
+i mean the program isnt working...
+ you downloading the debinan version
+yes
+i did all that were writed there
+ok.. and nothing
+ httpubuntuforums.orgshowthread.phpppost
+ try that
+ok i willtry
+are just you seeing this maasage or everyone
+the ubuntu forums is good too. so heres a link. httpubuntuforums.orgarchiveindex.phpt.html you may need all the help 
+i am seeing everyones messag too 
+thank you very much. i will try it
+yup and goodluck
+better 
+keeping working on it...where are you from
+ israel  i have  in english lesson 
+good
+its very bad never mind i am trying to do what writed in the forum and its writeing me alien command not found
+which one did you try
+ the first httpubuntuforums.orgshowthread.phpppost
+ i also tryed to do this httpubuntuguide.orgskype but its not help.. i am see skype in menu but when i am click on the program nothing is happen
+does use the command with alien...that is not for debian based distros
+so what to do
+so what i need to do
+pm me
+i just walk you through the steps
+your not responding
+ill just do it here
+you got your terminal up
+ do u see my pm massages dont u
+sudo aptget install libqtcmt   you going to need thisfile
+how can i copy from this program
+what  program are you using
+are you on a linux box
+ok never mind i will install it leter
+ok never mind i will install it later
+ok
+thank you very much for the help
+sure no prob
+ you dont want to tdo tha.....you get spammed like mad
+what did u do
+ theyll spam you know
+hi all
+im having difficulties installing . lts bit on my desktop
+is there anyone around who can help me
+well i can get it to boot the livecd
+what is the issue
+all on one line please.  and get to the point 
+ive heard about that before.  is this machine online when the ubuntu installer is running  is this a livecd or liveusb
+this machine is online
+can you take a screenshot of the installer in its frozen state and paste it on imageshack.us
+ok
+device sr is the cd
+many many io errors are very common on livecds
+the freeze or the io errors
+i dont remember the installer well enough to follow.  is it now unfrozen
+just finish the install without doing anyting extra
+does it freeze regardless of the check boxes
+ill now find out... i have tried all options except for checking none of the boxes
+haha ok 
+does the rest of the livecd work
+i mean right now.  is the whole thing frozen or just the installer
+im booting into live now... see if everything works there...
+k
+good idea burn slow or use liveusb i recommend liveusb if possible
+bit is fine
+there are many ways httpshelp.ubuntu.comcommunityusbinstallationmedia
+httpshelp.ubuntu.comcommunityinstallationfromusbstickcreatingabootableubuntuusbflashdrive
+great 
+i suggest just downloading the iso again check the md sum and make a liveusb instead of livecd. if the problem persists i can suggest some more things
+the installer is picky lately imo
+yay 
+give it some time
+ great boot that you made a usb drive right
+yep
+k
+got into the graphical installer again
+k
+still nothing
+frozen 
+open gparted
+open gparted
+failed to run usersbingparted as user root
+run it via the gui
+i did just doubleclicked it...
+sudo gparted in a term    
+the livecd is a full os.  what are you talking about
+choose try ubuntu you can install either way its a stupid choice
+do any of the partitions have any errors red s or orange triangles or similar
+i thought so.  are they ntfs partitions
+use windows to check all your partitions.  something is wrong with them and it is causing hte installer to crash
+yay
+i dont really know the details of fixing it other than making a new partition table gpt may delete everything
+d
+hahah 
+ict 
+check the anyway
+
+they took fixmbr out
+
+fdisk is still in ubuntu
+gparted is not good at fixing ntfs partitions.  i strongly recommend you use windows to fix it
+i upgraded from ubuntu . to . last night and now i cant boot up . i get the error kernel panicnot syncincvfsunable to mount root fs. booting to the old kernel makes it to the graphical login but hangs... i can log in through terminal. the menu.lst has the same root and kernelroot setting for both the new and old kernels. how can i fix this so i can get on my computer again
+do you guys think if i upgrade through the terminal login since i cant get graphical the problem will go away
+did you get any errors
+did you get any errors during the upgrade or experience any problems
+what do you mean whenever i try to boot up i get kernel panicnot syncingvfsunable to mount root fs on unkownblock  i guess that can be considered an erro etc.
+i dont recall any errors throught the installation. i was sleeping while it updated
+do you have initrdtools installed on the system
+i dont believe i do. not if itd not bundled with ubuntu i dont
+are you on the machine now
+no im on another computer. ive been going back and forth on it all morning haha so its no deal. do you need any info for it
+well on the broken computer try doing a dpkgreconfigure of the linuximageuname r
+actually scratch that you dont need to get in to that.
+try to reinstall the kernel and updategrub
+how do i reinstall the kernel and updategrub
+the problem may just be with your bootgrubmenu.st file on the system. but with out seeing the file its hard to tell.
+type in updategrub
+i can tell you about my menu.lst
+are you able to paste it
+no but i have information for it.
+menu.lst. has the same root and kernelroot setting for both the new and the old kernel
+what exactly do you need to know about my menu.lst
+does your menu.st have initrd images listed under each kernel
+and also what is the version of the kernel you are trying to boot ..
+is this is bootvmlinuz..generic rootuuidfadcedccf ro quiet splash
+i can log in throguh terminal using .. i can get to graphical login bot it hangs.
+under that line should be something like initrd bootinitrc.imgblah
+is that there
+alright log in to the machine in recovery mode and run updategrub
+sorry i was at the other machine. the old kernel that i can get up to the graphical lagin to has this line initrd  bootinitrd.img.. generic
+okay. does the new one have a similary line just with the updated version numbers of ..whatever
+but the new kernel is missing that particual line. should i still run the grubupdate
+yes. grubupdate will try to recreate your menu.st automatically is all.
+after grubupdate is done check the menu.st and you will need that initrd line for the new kernel. im just hoping it will add it for you.
+ok. so just run at terminal grubupdate. once that is done do you need the new kernel initrd or should it work
+yes run updategrub at a terminal. like i explained it should add the initrd line you need. but you can check yourself after it is done.
+that didnt add the line... do i need to upgrade maybe i tried using another kernel i am going to see if that works.
+i would try adding the line myself. just copy one of the other ones the only thing that needs to change is the version number at the ends ..etc....
+ifyou look at one of the entries that has the line its pretty self explanitory.
+how do i add that like
+edit the file with nano
+sudo nano bootgrubmenu.lst
+thank you and just add it
+after you are done editing save the file by hitting ctrlw
+yeah just add it like the working kernels have.
+youc an back it up first to by sudo cp bootgrubmenu.lst bootgrubmenu.lst
+even after adding in the line it says the file isnt found... should i download the kernel again or..
+what do you mean the file isnt found
+i guess the kernel didnt download properly. do i have to redownload it
+did the error message change
+theres no more problem syncing or whatever message but now it says that the file cant be found. i can still access the other kernel but it still hangs at graphical login..
+sudo aptitude install initramfstools
+then updategrub again.
+you would have to update your etcaptsources.list and change all references to gutsy then do a distupgrade.
+crap really so thats even more things to take care of. daaaamnnn 
+what do you mean
+like i said it soundslike you are missing some packages particularly the inittramfstools
+sry one t there.
+well i figured that if i upgraded from . to . through the terminal that might fix the problems 
+i tried getting the initramfstools but it said i gotta disable something... and i dont know exactly what it is
+well you need initramfstools to generate the missing file.
+facebook hotmail and yahoo mail will not load
+i left the computer on for hours and it would not load facebook at all
+i can no longer check my mail
+no.
+its not the internet
+its ubuntu
+windows xp works fine
+and vista
+both load everything
+its has to have something to do with ubuntu being windows xp and vista both load hotmail facebook and yahoo mail
+is ubuntu detecting your network wireless
+is it not loading just those sites
+that is unusual
+installed the latest x as in an update or manually installed from another source
+ the lastest x made my os stable without it my computer was crashing into the log in hence logging me out
+ manually installed with multi lines using 
+i dont know how x would affect the ability to use hotmail etc it shouldnt make a difference
+what prblems were you having with x that is on . default
+what graphics card do you have
+well im stumped if it was a graphics problem it would have pushed you to the cli but you are able to get so far as to try to open a program then it crashes
+ all i know is without the lastest x im screwed but before i installed it firefox worked on every site
+have you tried giving ubuntu a go .
+at least you can tell if your graphics will work in the next release
+i think so but im trying to ascertain whether the x in . has been updated so that you dont run into the problem with the new release
+one sec
+thats the alpha httpcdimage.ubuntu.comreleasesnattyalpha
+i came across this httpubuntuforums.orgshowthread.phpt
+im not suggesting you switch to it i just want to make sure the x in . will work for you
+you need to copy it with root authority
+hang on
+sudo cp pathtofile pathtocopyto
+not sure if i got that command right
+where have you got the xorg.cong file now
+sudo cp homezombiedesktopxorg.conf etcx
+open a file manager and look in etcx is xorg.conf there
+restart
+sorry i just realized that youre running an updated x that was meant to be done on the default . x
+you can delete the xorg.conf and it will return back to normal
+sudo rm etcxxorg.conf
+then another restart
+welcome back sorry about all that
+do you have anything important on ubuntu
+id recommend that you reinstall ubuntu . and see if you can get a fix for the xorg crashes
+there has to be a reason why x is crashing on . if you can find out why maybe it can be fixed seems like we are swapping one problem for another
+welcome back
+seems like it though still dont know how or why
+but wine and zsnes crashes
+i think it was just half an hour
+time flys when youre having fun 
+what do you use in wine might be overkill but you could try virtualbox and a windows vm as an alternative
+not sure what you mean by the updates messing with you
+sounds rather vague
+updates have always been rock solid for me not sure what happened when you manually installed the new x last time but it must have messed something up
+ive always been a laptop guy myself thinkpads have always worked great with ubuntu
+yup
+did you see what was getting updated
+hmm
+i must confess iv never used aptget from command line more of a pacman guy myself
+i have to admt i dont do anything when updating to make sure the updates run smoothly
+i dont recommend that
+how do i forward ports for my deluge torrent client 
+that usually depends on your rounter not your os
+
+in xp i got proper portforwarding without configuring any. but here it always says no incoming connections
+there are ways computers get around router port forwarding such as upnp but port forwarding will definitely work in ubuntu
+google search for deluge port forwarding and youll probably find a good guide
+ok..
+dont worry its usually pretty easy
+i like deluge more than transmission... deluge has good gui p
+heh transmission is my favorite but i havent tried deluge yet.
+mm ok
+do you know a way to check whether port is forwarded or not 
+sometimes bittorrent clients will let you do that in the preferences... otherwise i saw a connectioncheckertorrent on the internet a while back  you could try searching for that
+to actually set up port forwarding you need to log into your router and thats what youd need a guide for
+i entered my ip address in firefox. it asked for password and username.. i entered both.. then a page appeared.. but it had no word called port forward 
+its labeled differently for many rounters.. i think mine was under security settings or something
+i dont have a static ip.. so it will come 
+a dsl router i have from nokia siemens
+sorry what about a static ip
+but i saw a similar in portforward.com ... but the screenshot there has some options underwhich one can find portforwarding.......... for my it is not showing that at all.. i have checked all in that page..
+hmm try looking under all the preferencessettings for port forwarding. it should be there somewhere
+no matter what number i set.. transmission preferences windows shows port closed only ..   transmission cannot open ports by itself p p 
+yes thats right. you have to open the port from your router and then put that port number into transmission
+you said you have a nokia siemens router
+true
+but it doesnt match with the one in portforward.com
+could you find the model number on it different models will probably have different settings
+is model number  mac number 
+no. mac number has to do with your network. your router should have the model number written on it somewhere like nokia  or something
+nokia siemens networks. . .. residential router  ......... rathg vdc   ma .............
+yes yes yes. it is .. residential router 
+ok  can you search for port forwarding for that specific router model
+ok.
+thankyou for guiding.
+no problem  did you get it working
+no. but ill .. later  thanks
+alright. good luck
+drwillis  the alternate cd can be used to upgrade  just make sure you download the correct one for your system
+ok.. before giving my frnd alternate ..iso. i should give him all updates till date in ... right 
+or is this step not needed 
+its recommened but im not sure if its actually needed. thats a very good question to ask this channel
+even my update manager has  mb of updates.. but its not updating.... after entering password.. it says fix broken first and in synaptic  it shows no broken packages to fix... now what say 
+try checking with the commandline open terminal and type sudo aptget install f without the quotes
+ upgraded  newly installed  to remove and  not upgraded.
+did you already start upgrading to .
+ you shouldnt have that many packages waiting to be upgraded... i dont know why that happened
+i always install updates daily
+but now it says  mb to be updated... i enter your command and also entered autoremove command... but still update manager says fix broken first but i have no broken in synaptic
+could you check something for me less etcaptsources.lst and see if they say jaunty
+hey. that command told no such file or directory
+sorry it should be less etcaptsources.list
+this is the file that tells aptget what upgrades to download
+httppaste.ubuntu.com here go
+yeah they say karmic
+which means it thinks its upgrading already
+try opening the file in nano and changing every instance of karmic back to jaunty
+then run sudo aptget update
+ oh ok.
+sorry but i have to go. good luck with everything
+thanks.. thats helped me to fix.
+omg
+why is yum insisting on pulling in adobe reader when i only need flash
+
+this is ubuntu support not redhatfedora
+ok please try to keep that noise out of the channel
+he wont even he uses the rpm command instead of yum
+he wont what 
+using an rpm command to remove a previous kernel will clean up the grub automatically as opposed to yum which will not. the ubuntu portion of grub will also be preserved
+fedora will not update ubuntus grub config
+which is what i said
+no  it wont then
+as ubuntu now uses grub which is manged from etc from within ubuntus install not boot any more
+hence why im saying its not a real headache
+from where 
+then they are not experimental
+doesnt look like it
+what part of stop talking about fedora am i not making cleaer to you 
+there are a few bugs logged for it that are being worked on
+ok. this is a pretty big problem
+im well aware
+xorg is part of the alternative install
+xorg is not installed by default when you install a command line system
+xorg is installed by default from the alternative cd
+how do you install a command line system from the alternative cd 
+press f at boot prompts
+super thank you
+why does the colour matter 
+latter models are supposedly more susceptable
+to what 
+why
+why what 
+why do swap partitions lack a uuid
+im not  certain why possibly because there is no file system to create a checksum size on
+please dont misslead people
+stop
+of course
+you dont have to reinstall and you should not reinstall every  months that is not a method of stopping defragging
+i reinstall for clean disk.
+yes you reinstall
+why are you asking in ubuntu 
+offtopic
+nonsense
+no its not
+macs are supported and have been for a long time
+thats nothing to do with ubuntu as you no
+ubuntu is based on debian ok
+so  its nothing to do with ubuntu
+no
+because its not stable enough
+do some research on it its currently broke but its stability changes up and down daily
+but that is listed on the httpshelp.ubuntu.com guide which you should have read before installing
+do you use bit ubuntu
+yes
+just ask the question
+its not great but its also not the end of the world
+it happens because the tmp directory is a tmpfs
+ok doesnt change what i said though
+no
+. can be discussed in ubuntu
+no
+anyone know how to fix overlapping partitions
+sort the spacingsizing out
+sorting the space out so partiitons dont over lap
+how do you do that without using gparted
+what tool are you using
+youve asked like  times  just wait a minute
+there are other people wnating help
+it doesnt work like that if you have overlapping partitions your paritions table is screwed
+deleting the mandrivva parition wont fix that
+if your partition tabledata is messed up
+if your partition table is dead  youll have to rebuild your disk system
+its mounted read only
+ive told you about  times if your partition tables are overlappying your data is worthless so youll have to rebuild
+if its mounting it read only and fsck wont fix it that suggests there is a fatal problem
+im not confused
+your tyring to access your data and copy data around on media that youve just mouonted a disk on
+is confused
+i assure you im not
+i didnt say they where not
+if your partitions are overlapping there is a good probabilyt of file system corruption
+you think you can access the data that doesnt mean its all there and ok
+your encoder  card does hd  not the software
+create a theme
+create a theme in that theme define your icon set
+sure
+create an icon pack
+or edit the current one
+usrsharethemes from memory  not certain
+usrshareicons then there is .theme files somewhere
+usrshareicons for system wide ones as ive said  times
+the .icons are you personal ones
+look for the .theme files there is also a sub forum on ubuntuforums.org for art work which may have guides for you
+im no icon master have a glance through the forum and look for the guides i suggested
+there is a whole artwork which covers icons sub forum on ubuntuforums.org
+did you look in the forum 
+did you not find any threads on modifying themes 
+what video card
+are you using the restricted drivers channel
+have you reconfigued it to the correct resolution 
+sudo dpkgreconfigure xserverxorg 
+what resolution are you trying for
+ x 
+ok  so did you select just that resoution when you did the reconfigured
+and what resolution do you get
+aptget remove gnomedesktop
+i hope you have something else already installed
+use synaptic to remove it all
+it will remove everything as gnome apps depend on gnome so if you remove gnome  the apps wont work
+use synaptic and click what you want gone and hit remove all
+depends on dependencies but yes as ive said open synmaptic and remove all gnome apps
+yes but you have to call out the packages
+no  use synaptic or aptcache to search for the correct package names
+there will be a lot
+to remove the package you need to know the correct package name
+so youll need to use synaptic to search and select for the packages or aptcache to search for the packages then aptget remove to remove them
+remove ubuntudesktop
+or whatever the correct gnome package name is
+thats why i said search
+that wont remove everything due to dependencies
+thats not it
+why every  minutes  what is this place for  isnt it for helping the people who can do what they want 
+is this chat place for whole linux users  or iam wrong .
+this is the official support channel for ubuntu
+topic
+what are you trying to accomplish
+what did you give me this link for 
+what type of video card do you have
+ i want my compiz to work
+okay i will try to help you do you know what type of video card you have
+what happens when you try to enable the extra desktop effects
+this is my video card       intel corporation mobile gmgl integrated graphics controller
+okay what happens if you try to enable the extra effects
+it tells me  desktop couldnt be enabled 
+hrm.
+do you know what version of ubuntu you have installed
+in a terminal try the command      glxinfo  grep render
+we are looking to see if you have direct rendering enabled
+i did
+and it tells me  direct rendering yes
+so when you click in system  preferences  appearence on the visual effects tab and sellect extra effects it gives you an error
+what is the exact error
+desktop effect couldnt be enabled
+i found this which will help explain some of the issues with your video card in jaunty httpubuntuforums.orgshowthread.phpthighlightdesktopeffectscouldntenabled
+so you can follow the guide and get appropriate drivers or wait until the next version of ubuntu comes out.
+as the guide recomends it could break your install.
+i have got that link before  but i dont know what should i do with it . there are some logs and some commands and i dont know what to do with it  and even if i will copy it and paste it  i dont know where i will paste it
+well then i would wait untill the next version of ubuntu comes out and your problems will be solved.
+there are issues with your card and jaunty.
+where can i find the xorg.conf
+etcxxorg.conf
+if it doesnt exist you have to create one.
+that thread shows you how to create one and were its located.
+i cant walk you through the instructions.
+that thread explains the issue and what you need to do to solve it. ive told you i would just wait untill the next version comes out to get the effects.
+its not worth breaking your system over. especially if you dont understand they recomend not to do it.
+read the warning in red at the top.
+it was working with me very fineeeee
+what was working
+okay what happened before it broke
+howd you get back in to ubuntu then
+when you reinstalled did you install a newer version of ubuntu
+then it should be working just as before.
+hit altf and type in compiz replace    then hit enter
+try to enable effects
+did you have to do something before to get effects working
+i have no idea what the problem is and how it would be recreated after a fresh install when it worked before.
+ then i want to know now  what is really special about linux system as i see its very complicated to work with   very complicated to insatll programs . what is so special about it 
+its not complicated once you learn it. as ive stated your hardware has issues with the current version of ubuntu. they are fixing it with the next release. and i believe it worked under . as well.
+heres a nother fix with a little more details httpubuntuforums.orgshowthread.phpthighlightgm
+those commands under the code sections are to be entered in a terminal applications  accessories  terminal
+did you read the last link i gave you it has step by step instructions on how to fix your intel card
+this room is volunteers. ubuntu has paid support availible.
+those instructions from mralexandro are for nvidia cards not intel
+you need to follow these httpubuntuforums.orgshowthread.phpt
+pleaseee  read it with me  and lets follow it together   and see if it will be understandable or not
+ it opened another page   the source list .....then 
+i see that its leading me to update     if i will update i will get my system crashed agaiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiinnnnnnnnnnnnnnnnn
+ how are you 
+my system working fine now with the visual effect after i updated my ubuntu  allthought its not safe for me to upgrade my system as i always get system crashed after updating .....but any way its ok now .but now i have another probelm
+yasterday i was using mobile modem and it was working fine  after upgrading  my system asking for password while iam trying to connect with my mobile modem  when i put my pass word which i created to log in my ubuntu ... its not working ...do you know the way out 
+what is the location of the make program on your machine yeah what is the location of the make program on my machine
+install buildessential
+how exactly should i run the command
+you can use synaptic to install programs. open synaptic and search for buildessential
+thx
+what are you trying to do anyways
+im trying to install a program and i got that error
+however you can resize ntfs with ubuntu
+what program are you trying to install
+vmware d
+thats what i guessed    did you try to use synaptic what error did you get
+i didnt find it in synaptic is it there
+im using the installer from their homepage
+its in system administration or something in the menu
+you have to use the vmware installer but before doing that you need to install a few things
+i found synaptic d its just the program vmware find d
+i found synaptic d its just the program vmware i cant find d
+httppaste.ubuntulinux.nl
+you wont find vmware in synaptic if thats what youre trying to do
+i thought you suggested that
+in synaptic install buildessential gcc.
+also install linuxheaders for your kernel
+how
+which headers should i install sry for all the stupid questions man  
+you have the x version of ubuntu and never changed your kernel
+at least i think so d
+install linuxheaders  it should be what you need. to check in a console type uname a
+linux patrik ..  mon oct   bst  i gnulinux
+then you have the  kernel
+yeah
+ok now i see i was looking at the package with the kernel version but now it installed that one aswell p
+so you installed everything in synaptic
+yeah
+now  in the console   export ccusrbingcc.   then   vmwareconfig   or whatever the script name is
+the reason you do this is because gcc is the default compiler but the kernel and kernel modules need to be compiled with gcc. instead
+do i need to reebot before installing vmware
+no
+so now it should work
+did you run the configuration script with all the network settings
+im still trying to install vmware.... what script
+no its the installer im trying to run
+ok run it after you export ccusrbingcc.
+still get the same error
+what error
+the export command will fix that
+type gcc. v in a console
+is the last line gcc .. ....
+httppaste.ubuntulinux.nl
+looks like it
+you need to run the installer   in the same console as export ccusrbingcc.
+what is nat networking the other thing worked now thx 
+you can answer yes to all the questions....   nat means that vmware machines will share your computers connection
+ok good
+when you setup a virtual machine you have to choose how it is conencted. i always use ma
+nat
+now it seems to have run the entire installer without problems d
+thx alot
+no problem
+what now sry man but your so helpful d 
+nm i think i figured this one out myself
+possibly but i have reinstalled the  drivers since and direct rendering still doesnt work
+not the drivers directly from nvidia but the nvidiaglx package
+thanks for your help btw
+is there any way to see why the kernel module doesnt load
+i am not using the hardware drivers manager i am using just the command line
+and i was using . or  cant remember
+i have been having this problem since august  see post in forums lol
+is x still running yes but i always reboot
+interesting. are we talking about the free drivers too i stop gdm when installing the drivers directly from nvidia because it says i should but i need to stop gdm when installing the free drivers too
+also i might have tried building and install mesa .. a few months ago will the nvidiaglx package overwrite my mesa install i tried building mesa to fix my dri problem in the past
+why would you build mesa nvidia does not use mesa
+by running the nvidia.com installer youve crippled hardware drivers
+as i said nvidia does not use mesa
+i dont recommend it but if you already have ...
+not a chance
+regarding hardware issue right
+yes
+so you have never used the nvidia installer on this install of ubuntu
+yes i have used the nvidia installer once. but i ran the uninstaller too.
+hopefully that didnt break anything 
+is the nvidia kernel module loaded
+so its loaded right now and the varlogxorg..log doesnt show any nvidia errors
+yes but no direct rendering.
+dpkg s usrliblibgl.so..
+brb need to reboot real quick but will try that command
+pastebin the output of glxinfo
+will do
+httprafb.netptqrbs.html
+hrm pastebin your varlogxorg..log too
+the server glx version says mesa which implies that the nvidia driver has not replaced the files it needs to replace
+httprafb.netptfrh.html
+ok this is a bit magic but it may work sudo aptget purge remove nvidiaglx sudo aptget reinstall install libglmesaglx sudo aptget install nvidiaglx
+thanks i will give that a try will be back to report on success or failure
+you shouldnt even need to restart x when its done
+does that file exist
+didnt work
+perhaps setting libgldebug to verbose could help i have never gotten that to work though
+since nvidia doesnt use mesa you dont get anything with that

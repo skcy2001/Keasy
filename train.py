@@ -67,7 +67,7 @@ n_vocab = len(char_to_int)
 print ("Total Characters: ", n_chars)
 print ("Total Vocab: ", n_vocab)
 
-seq_length = 100
+seq_length = 10
 dataX = []
 dataY = []
 for i in range(0, n_chars - seq_length, 1):
@@ -84,8 +84,8 @@ X = numpy.array(dataX)
 dataY = numpy.array(dataY)
 y = np_utils.to_categorical(dataY)
 
-embedding_dim =100
-max_length =100
+embedding_dim =10
+max_length =10
 
 from keras.layers import Embedding
 
@@ -103,7 +103,8 @@ model.save("Trained_model")
 int_to_char = dict((i, c) for i, c in enumerate(chars))
 
 def predict_next_26_chars(input_str):
-  char_list=list(input_str)
+  final_str = input_str
+  char_list = list(input_str)
   pattern = [char_to_int[char] for char in char_list]
   for i in range(26):
     X = numpy.reshape(pattern, (1,len(pattern)))
@@ -113,11 +114,10 @@ def predict_next_26_chars(input_str):
     pattern.append(index)
     pattern = pattern[1:len(pattern)]
     final_str += result
-
   return final_str
 
 import pickle
-with open("Variables", 'wb') as f:
+with open("variables.pickle", 'wb') as f:
   pickle.dump([char_to_int,int_to_char], f)
 
 input_str = "The boy laughed at the fright he had caused. This time, the villagers left angrily. The third day, as the boy went up\
@@ -132,4 +132,4 @@ print("Original String")
 print(input_str)
 print()
 print("Predicted String")
-print(predict_next_100_chars(input_str,1))
+print(predict_next_26_chars(input_str))

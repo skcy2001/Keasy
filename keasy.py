@@ -4,7 +4,9 @@ from tkinter import END,INSERT
 from tkinter import font
 from functools import partial
 from tensorflow import keras
-
+from gtts import gTTS
+import os
+from playsound import playsound
 keyb = tk.Tk()  # Root Window
 
 # region of Variables
@@ -14,11 +16,12 @@ button_hg = 18 # height of buttons-09876543
 entry_font = font.Font(family="Helvetica",size=20) # font used
 button_font = font.Font(family="Helvetica",size= 15,weight="bold") # font used
 alt_font = font.Font(family="Helvetica",size= 11,weight="bold") # font used
-Key_colour = '#FF99FF'
+Key_colour = '#FFDDFF'
 Accent_colour = '#967bb6'
-Accent_colour2 = '#CBCE91'
+Accent_colour2 = '#FF99FF'
+Accent_colour3 = '#E1AD01'
 Bg_Colour = '#C7D3D4'
-Row_index = (2,3,4,5,6,7)
+Row_index = (2,3,4,5,6,7,8)
 
 #endregion of Variables
 
@@ -37,6 +40,9 @@ inp_text.focus_set()
 def press(inp):
     inp_text.insert(INSERT,str(inp))
     inp_text.see(INSERT)
+    try:
+        playsound("Audios/"+str(inp)+".mp3")
+    except: pass 
 def clear():
     inp_text.delete(1.0,END)
     inp_text.see(INSERT)
@@ -58,6 +64,11 @@ def enter():
 def backs():
     inp_text.delete("insert-1c",INSERT)    
     inp_text.see(INSERT)
+def speak():
+    tts = gTTS(inp_text.get(1.0,END),lang='bn')
+    tts.save("voice.mp3")
+    playsound("voice.mp3")
+    os.remove("voice.mp3")
 
 # region of Basic Keys
 
@@ -67,7 +78,7 @@ line = "~!@#$%^&*()_+["
 l1 =  [0 for x in range(len(line))]
 j = 0
 for i in range(len(line)):
-    l1[i] = tk.Button(keyb,text = str(line[i]), width = button_wd, command = partial(press,line[i]), font = button_font,bd = 4, bg = Accent_colour)
+    l1[i] = tk.Button(keyb,text = str(line[i]), width = button_wd, command = partial(press,line[i]), font = button_font,bd = 4, bg = Accent_colour2)
     l1[i].grid(row = Row_index[0] , column = j, ipady = button_hg-18)
     j = j + 1
 
@@ -150,6 +161,10 @@ Left.grid(row = Row_index[5] , column = 11, ipady = button_hg-10)
 # BackSpace Key
 Backs = tk.Button(keyb,text = "Backspace", width = button_wd+7, command =  lambda : backs(), font = button_font,bd = 4,bg = Accent_colour)
 Backs.grid(row = Row_index[5] , column = 9, columnspan = 2, ipady = button_hg-10)
+
+#Speak Key
+Speak = tk.Button(keyb,text = "Speak", width = button_wd+127, command =  lambda : speak(), font = alt_font,bd = 4,bg = Accent_colour3)
+Speak.grid(row = Row_index[6] , column = 0, columnspan = 15, ipady = button_hg-18)
 
 # endregion of Functional Keys
 
