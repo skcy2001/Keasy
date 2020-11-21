@@ -7,7 +7,7 @@ import regex as re2
 
 # Pre-defined variables
 folder_path = 'Dataset' # Folder containing the datasets
-row_count = 16587830 # No. of Dialogues
+row_count = 6587830 # No. of Dialogues
 rate = 2785.5153203342757 # No. of entries read per second
 
 def char_preprocess(text):
@@ -21,22 +21,23 @@ def char_preprocess(text):
     text = text.replace('.','\n')
     return text
 
-fhand = open("corpus.txt","w+",encoding='utf-8-sig')
+fhand = open("corpus.txt","a+",encoding='utf-8-sig')
 
 # Scanner function
-for filename in glob.glob(os.path.join(folder_path, '*.csv')):
+for filename in glob.glob(os.path.join(folder_path, '*.txt')):
     
     #Opens one file at a time and reads from it
-    with open(filename, 'r',encoding='utf8') as f:
-        data = csv.reader(f,delimiter = ',')
-
-        #Reads line by line, preprocesses it, and writes in a file
-        for line in islice(data,10000):
-            print("FILE :", filename, "| Time left : %dm%6.3fs" %(math.floor(row_count/rate/60),row_count/rate % 60), end='\r')
-            row_count = row_count - 1
-            line = char_preprocess(line[5]) + "\n"
-            try: fhand.write(line)
-            except: continue
+    f = open(filename,'r',encoding='utf8')
+    data = f.read()
+    data = data.split('\n')
+    row_count = len(data)
+    #Reads line by line, preprocesses it, and writes in a file
+    for line in data:
+        print("FILE :", filename, "| Time left : %dm%6.3fs" %(math.floor(row_count/rate/60),row_count/rate % 60), end='\r')
+        row_count = row_count - 1
+        line = char_preprocess(line) + "\n"
+        try: fhand.write(line)
+        except: continue
     
     f.close()
 print("\n",end='\r')

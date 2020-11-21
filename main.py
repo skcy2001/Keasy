@@ -12,6 +12,8 @@ import speech_recognition as sr
 
 keyb = tk.Tk()  # Root Window
 model = load_model()
+r = sr.Recognizer
+f = open("Dataset/history.txt",'a')
 
 # region of Variables
 keyb.title('Keasy Keyboard') # title Name
@@ -25,15 +27,15 @@ Accent_colour2 = '#eddbf4'
 Accent_colour = '#dfc0eb'
 Accent_colour3 = '#dfa6e6'
 Bg_Colour = '#89609e'
-Row_index = (3,4,5,6,7,8,2)
+Row_index = (4,5,6,7,8,9,2,3)
 BD = 4
 
 #endregion of Variables
 
 # Keyboard configuration Area
-keyb.geometry('1218x670')  # normal size
+keyb.geometry('1218x620')  # normal size
 keyb.minsize(width= 1218 , height = 300)  # minimum size
-keyb.maxsize(width= 1220 , height = 600)  # minimum size
+keyb.maxsize(width= 1220 , height = 700)  # minimum size
 keyb.configure(bg = Bg_Colour)  # add background color
 
 
@@ -73,23 +75,36 @@ def backs():
 def speak(inp = ''):
     if inp == '':
         inp = inp_text.get(1.0,END)
-    tts = gTTS(inp.lower(),lang='en')
-    tts.save("voice.mp3")
-    playsound("voice.mp3")
-    os.remove("voice.mp3")
+    try:
+        tts = gTTS(inp.lower(),lang='en',slow = False)
+        tts.save("voice.mp3")
+        playsound("voice.mp3")
+        os.remove("voice.mp3")
+    except: pass
+
 def space():
     inp_text.insert(INSERT," ")
     inp_text.see(INSERT)
-    text = inp_text.get(1.0,END)
-    try: speak(text.rsplit(' ',2)[1])
-    except : speak()
+    entry = inp_text.get(1.0,END).lower()
+    entry = entry.strip()
+    entry1 = entry.rsplit(' ',2)[-1]
+    f.write(entry1+'\n')
+    speak(entry.rsplit(' ',2)[-1]) 
+    prediction = predict(model,entry1,7)
+    for i in range(len(prediction)):
+        p1[i]['text'] = prediction[i]
+    
 def listen():
     with sr.Microphone() as source:
         audio = r.listen(source,timeout = 10)
         text = r.recognize_google(audio)
         inp_text.insert(INSERT,text)
         inp_text.see(INSERT)
-
+def ppress(inp):
+    inp_text.insert(INSERT,p1[int(inp)]['text'])
+    inp_text.see(INSERT)
+    space()
+    
 # region of Basic Keys
 
 # First Line
@@ -183,13 +198,22 @@ Backs = tk.Button(keyb,text = "Backspace", width = button_wd+12, command =  lamb
 Backs.grid(row = Row_index[5] , column = 9, columnspan = 2, ipady = button_hg-10)
 
 #Speak Key
-Speak = tk.Button(keyb,text = "Speak", width = button_wd+41, command =  lambda : speak(), font = alt_font,bd = BD,bg = Accent_colour3)
-Speak.grid(row = Row_index[6] , column = 0, columnspan = 5, ipady = button_hg-18)
+Speak = tk.Button(keyb,text = "Speak", width = button_wd+39, command =  lambda : speak(), font = alt_font,bd = BD,bg = Accent_colour3)
+Speak.grid(row = Row_index[6] , column = 0, columnspan = 5, ipady = button_hg-18,pady = (10,5))
 
-#Speak Key
-Listen = tk.Button(keyb,text = "Listen", width = button_wd+41, command =  lambda : listen(), font = alt_font,bd = BD,bg = Accent_colour3)
-Listen.grid(row = Row_index[6] , column = 6, columnspan = 5, ipady = button_hg-18)
+#Listen Key
+Listen = tk.Button(keyb,text = "Listen", width = button_wd+39, command =  lambda : listen(), font = alt_font,bd = BD,bg = Accent_colour3)
+Listen.grid(row = Row_index[6] , column = 5, columnspan = 5, ipady = button_hg-18,pady =(10,5))
 
 # endregion of Functional Keys
+
+# Prediction Line
+line = "0123456"
+p1 =  [0 for x in range(len(line))]
+j = 0
+for i in range(len(line)):
+    p1[i] = tk.Button(keyb,text = " ", width = button_wd+6, command = partial(ppress,line[i]), font = button_font,bd = BD, bg = Accent_colour3)
+    p1[i].grid(row = Row_index[7] , column = j, columnspan =2, ipady = button_hg-5,pady = (7,7))
+    j = j + 2
 
 keyb.mainloop()  # using ending point

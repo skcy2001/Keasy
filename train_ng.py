@@ -60,5 +60,5 @@ print("MODEL completed")
 # Saving the model variable with pickle
 with open("model.pickle", 'wb') as f:
     pickle.dump(model, f)
-os.remove("corpus.txt")
+
 
