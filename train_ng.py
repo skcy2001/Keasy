@@ -58,7 +58,7 @@ for line in model:
 print("MODEL completed")
 
 # Saving the model variable with pickle
-with open("model.pickle", 'wb') as f:
+with open("model_old.pickle", 'wb') as f:
     pickle.dump(model, f)
 
 

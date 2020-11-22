@@ -9,6 +9,10 @@ from playsound import playsound
 from predict import predict
 from predict import load_model
 import speech_recognition as sr
+import wpredict
+from wpredict import wpredict
+import symbols
+from symbols import start
 
 keyb = tk.Tk()  # Root Window
 model = load_model()
@@ -48,6 +52,9 @@ inp_text.focus_set()
 def press(inp):
     inp_text.insert(INSERT,str(inp))
     inp_text.see(INSERT)
+    entry = inp_text.get(1.0,END).lower()
+    try: perform(entry.rsplit(' ',2)[-1].strip(),wpredict(entry.rsplit(' ',2)[-1].strip(),20))
+    except: perform(entry.rsplit(' ',2)[0].strip(),wpredict(entry.rsplit(' ',2)[0].strip(),20))
     try:
         playsound("Audios/"+str(inp)+".mp3")
     except: pass 
@@ -81,7 +88,6 @@ def speak(inp = ''):
         playsound("voice.mp3")
         os.remove("voice.mp3")
     except: pass
-
 def space():
     inp_text.insert(INSERT," ")
     inp_text.see(INSERT)
@@ -93,7 +99,6 @@ def space():
     prediction = predict(model,entry1,7)
     for i in range(len(prediction)):
         p1[i]['text'] = prediction[i]
-    
 def listen():
     with sr.Microphone() as source:
         audio = r.listen(source,timeout = 10)
@@ -104,7 +109,38 @@ def ppress(inp):
     inp_text.insert(INSERT,p1[int(inp)]['text'])
     inp_text.see(INSERT)
     space()
-    
+def perform(ini,wordlist):
+    print(ini)
+    p = len(ini)
+    alph = {'a':0,'b':0,'c':0,'d':0,'e':0,'f':0,'g':0,'h':0,'i':0,'j':0,'k':0,'l':0,'m':0,'n':0,'o':0,'p':0,'q':0,'r':0,'s':0,'t':0,'u':0,'v':0,'w':0,'x':0,'z':0,'y':0}
+    for word in wordlist:
+        try:
+            letter = word[0][p]
+            alph[letter] = alph[letter] + 1
+        except: pass
+    colour(alph)
+    for i in range(min(6,len(wordlist))):
+        word = str(wordlist[i])
+        p1[i]['text'] = word[p+2:-2]
+def colour(data):
+    D = max(data.values())
+    if D == 0: D = 1
+    for i in range(10):
+        strin = l3[i]['text'].lower()
+        col = str(hex(100+int(data[strin]/D*150)))
+        col = col[2:]
+        l3[i]['bg'] = "#"+col+col+col
+    for i in range(9):
+        strin = l4[i]['text'].lower()
+        col = str(hex(100+int(data[strin]/D*150)))
+        col = col[2:]
+        l4[i]['bg'] = "#"+col+col+col
+    for i in range(7):
+        strin = l5[i]['text'].lower()
+        col = str(hex(100+int(data[strin]/D*150)))
+        col = col[2:]
+        l5[i]['bg'] = "#"+col+col+col
+
 # region of Basic Keys
 
 # First Line
@@ -204,6 +240,10 @@ Speak.grid(row = Row_index[6] , column = 0, columnspan = 5, ipady = button_hg-18
 #Listen Key
 Listen = tk.Button(keyb,text = "Listen", width = button_wd+39, command =  lambda : listen(), font = alt_font,bd = BD,bg = Accent_colour3)
 Listen.grid(row = Row_index[6] , column = 5, columnspan = 5, ipady = button_hg-18,pady =(10,5))
+
+#Symbol Key
+Symbol = tk.Button(keyb,text = "Symbols", width = button_wd+29, command =  lambda : start(), font = alt_font,bd = BD,bg = Accent_colour3)
+Symbol.grid(row = Row_index[6] , column = 10, columnspan = 4, ipady = button_hg-18,pady =(10,5))
 
 # endregion of Functional Keys
 
