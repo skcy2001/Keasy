@@ -1,0 +1,11 @@
+gtts
+fast-autocomplete
+Keras
+nltk
+numpy
+pandas
+playsound
+PyAudio
+SpeechRecognition
+pywebview
+
